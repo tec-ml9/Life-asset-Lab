@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新NISAの成長投資枠とつみたて投資枠をわかりやすく解説【2026年版】 - Life Asset Lab</title>
+<meta name="description" content="新NISAのつみたて投資枠と成長投資枠の違いを徹底解説。年間投資枠・投資対象・購入方法の違いと、どちらをどう使えばいいかを2026年最新情報でわかりやすく説明。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--primary:#e67e22;--text:#333;--muted:#666;--light:#888;--border:#ddd;--bg:#f5f5f5;--white:#fff;--pale:#fff8f0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.8;}
+  a{color:var(--primary);text-decoration:none;}a:hover{text-decoration:underline;}
+  header{background:var(--white);border-bottom:3px solid var(--primary);}
+  .header-inner{max-width:980px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-size:18px;font-weight:700;color:var(--text);text-decoration:none;}.logo span{color:var(--primary);}
+  .back-btn{font-size:12px;color:var(--primary);border:1px solid var(--primary);padding:6px 12px;border-radius:3px;text-decoration:none;}
+  .back-btn:hover{background:var(--primary);color:var(--white);text-decoration:none;}
+  .notice{background:var(--pale);border-bottom:1px solid #f0d0a0;padding:6px 0;font-size:12px;color:var(--light);text-align:center;}
+  .container{max-width:820px;margin:24px auto;padding:0 16px 60px;}
+  .article-tag{display:inline-block;background:var(--primary);color:var(--white);font-size:11px;padding:3px 10px;border-radius:2px;margin-bottom:12px;}
+  .article-title{font-size:clamp(20px,3.5vw,28px);font-weight:700;line-height:1.4;margin-bottom:12px;}
+  .article-meta{font-size:12px;color:var(--light);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);}
+  .toc{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--primary);padding:16px 20px;margin:24px 0;}
+  .toc-title{font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px;}
+  .toc ol{padding-left:18px;}.toc li{margin-bottom:6px;}.toc a{font-size:13px;color:var(--muted);}
+  h2{font-size:19px;font-weight:700;border-left:4px solid var(--primary);padding:6px 0 6px 12px;margin:40px 0 16px;}
+  h3{font-size:15px;font-weight:700;color:var(--primary);margin:28px 0 10px;padding-bottom:6px;border-bottom:1px dashed var(--border);}
+  p{font-size:14px;margin-bottom:16px;line-height:1.9;}
+  .table-wrap{overflow-x:auto;margin:20px 0;}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:400px;}
+  th{background:var(--primary);color:var(--white);padding:10px 12px;text-align:left;font-weight:700;}
+  td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tr:nth-child(even) td{background:#fafafa;}
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+  .compare-card{background:var(--white);border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+  .compare-head{padding:12px 16px;font-size:14px;font-weight:700;color:var(--white);}
+  .compare-head.tsumitate{background:#2980b9;}
+  .compare-head.growth{background:#27ae60;}
+  .compare-body{padding:14px 16px;}
+  .compare-body ul{list-style:none;padding:0;}
+  .compare-body li{font-size:13px;color:var(--muted);padding:4px 0 4px 14px;position:relative;line-height:1.7;}
+  .compare-body li::before{content:'●';position:absolute;left:0;font-size:8px;top:8px;color:var(--light);}
+  .point-box{background:var(--pale);border:1px solid #f0d0a0;border-left:4px solid var(--primary);padding:14px 18px;margin:20px 0;}
+  .point-box .label{font-size:11px;font-weight:700;color:var(--primary);letter-spacing:1px;margin-bottom:6px;}
+  .point-box p{margin:0;font-size:13px;}
+  .use-case{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:16px;margin:12px 0;}
+  .use-case-title{font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px;}
+  .use-case-body{font-size:13px;color:var(--muted);line-height:1.8;}
+  .aff-box{background:var(--pale);border:1px solid #f0d0a0;border-radius:4px;padding:20px;margin:32px 0;}
+  .aff-box-title{font-size:12px;color:var(--light);margin-bottom:12px;letter-spacing:1px;}
+  .aff-items{display:flex;flex-direction:column;gap:10px;}
+  .aff-item{background:var(--white);border:1px solid #f0c070;border-radius:3px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+  .aff-name{font-size:14px;font-weight:700;color:var(--text);}
+  .aff-desc{font-size:12px;color:var(--muted);margin-top:2px;}
+  .btn{display:inline-block;padding:9px 20px;background:var(--primary);color:var(--white);border-radius:3px;font-size:13px;font-weight:700;text-decoration:none;transition:background .15s;flex-shrink:0;}
+  .btn:hover{background:#c0392b;text-decoration:none;color:var(--white);}
+  .warn-box{background:#fff5f5;border-left:4px solid #e74c3c;padding:14px 18px;margin:20px 0;}
+  .warn-box .label{font-size:11px;font-weight:700;color:#e74c3c;letter-spacing:1px;margin-bottom:6px;}
+  .warn-box p{margin:0;font-size:13px;color:var(--muted);}
+  .disclaimer{background:var(--white);border:1px solid var(--border);padding:12px 16px;font-size:11px;color:var(--light);line-height:1.8;margin-top:40px;}
+  .disclaimer ul{padding-left:14px;}.disclaimer li{margin-bottom:3px;}
+  footer{background:#333;color:#aaa;padding:24px 16px;font-size:12px;}
+  .footer-inner{max-width:980px;margin:0 auto;}
+  .footer-logo{font-size:15px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;}
+  .footer-links a{color:#aaa;text-decoration:none;}.footer-links a:hover{color:var(--white);}
+  .footer-copy{font-size:11px;color:#666;}
+  @media(max-width:560px){.compare-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><a href="../index.html" class="logo">新NISA<span>ガイド</span></a><a href="../index.html" class="back-btn">← トップへ戻る</a></div></header>
+<div class="notice">※このページはプロモーションを含みます</div>
+<div class="container">
+  <div class="article-tag">制度解説</div>
+  <h1 class="article-title">新NISAの成長投資枠とつみたて投資枠をわかりやすく解説【2026年版】</h1>
+  <div class="article-meta">📅 2026年3月更新　🕐 読了時間：約8分</div>
+
+  <p>新NISAには「つみたて投資枠」と「成長投資枠」の2つがあります。「どう違うの？」「どちらを使えばいい？」という疑問に、2026年最新情報をもとにわかりやすくお答えします。</p>
+
+  <div class="toc">
+    <div class="toc-title">📋 目次</div>
+    <ol>
+      <li><a href="#overview">2つの枠の基本的な違い</a></li>
+      <li><a href="#tsumitate">つみたて投資枠とは</a></li>
+      <li><a href="#growth">成長投資枠とは</a></li>
+      <li><a href="#howto">どう使い分けるか？</a></li>
+      <li><a href="#start">まず始めるならどちら？</a></li>
+    </ol>
+  </div>
+
+  <h2 id="overview">2つの枠の基本的な違い</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>項目</th><th>つみたて投資枠</th><th>成長投資枠</th></tr>
+      <tr><td>年間投資枠</td><td>120万円</td><td>240万円</td></tr>
+      <tr><td>非課税保有限度額</td><td colspan="2">合計1,800万円（うち成長投資枠は1,200万円）</td></tr>
+      <tr><td>投資対象</td><td>金融庁認定の投資信託・ETFのみ</td><td>投資信託・ETF・上場株式（一部除外あり）</td></tr>
+      <tr><td>購入方法</td><td>積立投資のみ（定期・定額）</td><td>積立投資 + 一括投資どちらも可</td></tr>
+      <tr><td>こんな人向け</td><td>初心者・長期コツコツ派</td><td>経験者・個別株投資したい人</td></tr>
+    </table>
+  </div>
+
+  <div class="point-box">
+    <div class="label">最重要ポイント</div>
+    <p>新NISAでは2つの枠を<strong>同時に併用できる</strong>のが最大の特徴です。旧制度ではつみたてNISAか一般NISAのどちらかしか選べませんでしたが、新NISAでは両方使えます。ただし合計の生涯非課税枠は1,800万円が上限です。</p>
+  </div>
+
+  <h2 id="tsumitate">つみたて投資枠とは</h2>
+  <p>つみたて投資枠は、長期にわたった資産形成を目的とする投資枠です。年間投資枠が旧つみたてNISAの40万円から120万円へと3倍に拡大し、非課税保有期間も20年から無期限になりました。</p>
+
+  <div class="compare-grid">
+    <div class="compare-card">
+      <div class="compare-head tsumitate">✅ メリット</div>
+      <div class="compare-body">
+        <ul>
+          <li>金融庁認定の厳選ファンドのみが対象で選びやすい</li>
+          <li>定期積立で時間分散できリスクを抑えやすい</li>
+          <li>100円から始められる（SBI・楽天証券の場合）</li>
+          <li>手間がかからず初心者でも継続しやすい</li>
+        </ul>
+      </div>
+    </div>
+    <div class="compare-card">
+      <div class="compare-head tsumitate" style="background:#c0392b;">⚠️ 注意点</div>
+      <div class="compare-body">
+        <ul>
+          <li>購入は積立のみ。一括投資はできない</li>
+          <li>個別株・ETFへの投資はできない</li>
+          <li>年間上限が120万円のため、まとまった資金を一度に入れられない</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="growth">成長投資枠とは</h2>
+  <p>成長投資枠は旧制度の一般NISAを引き継ぐ枠ですが、つみたて投資枠との併用ができる点など、明確に違う特徴があります。年間240万円まで、投資信託だけでなく個別株にも非課税で投資できます。</p>
+
+  <div class="compare-grid">
+    <div class="compare-card">
+      <div class="compare-head growth">✅ メリット</div>
+      <div class="compare-body">
+        <ul>
+          <li>年間240万円まで投資可能（つみたて枠の2倍）</li>
+          <li>個別株・ETFにも投資できる</li>
+          <li>一括投資が可能。相場下落時にまとめて買える</li>
+          <li>つみたて投資枠の対象ファンドも購入できる</li>
+        </ul>
+      </div>
+    </div>
+    <div class="compare-card">
+      <div class="compare-head growth" style="background:#c0392b;">⚠️ 注意点</div>
+      <div class="compare-body">
+        <ul>
+          <li>商品の選択肢が多く、初心者には選びにくい場合も</li>
+          <li>個別株はリスクが高く、知識が必要</li>
+          <li>毎月分配型・信託期間20年未満のファンドは対象外</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- アフィリエイト -->
+  <div class="aff-box">
+    <div class="aff-box-title">PR・おすすめ証券会社</div>
+    <div class="aff-items">
+      <div class="aff-item">
+        <div><div class="aff-name">SBI証券｜つみたて・成長投資枠どちらも充実</div><div class="aff-desc">213本のつみたて投資枠 + 1,148本の成長投資枠。三井住友カード積立でポイント還元。</div></div>
+        <a href="#" class="btn">無料で開設 →</a>
+      </div>
+      <div class="aff-item">
+        <div><div class="aff-name">楽天証券｜楽天ポイントで積立できる</div><div class="aff-desc">楽天カード積立で最大2%還元。楽天ポイントをそのまま投資に使える。</div></div>
+        <a href="#" class="btn">無料で開設 →</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="howto">どう使い分けるか？</h2>
+  <h3>パターン①：初心者・投資未経験者</h3>
+  <div class="use-case">
+    <div class="use-case-title">👶 まずはつみたて投資枠だけでOK</div>
+    <div class="use-case-body">オルカンやS&P500などの低コストインデックスファンドをつみたて投資枠で毎月コツコツ積み立てる。これだけでも十分な資産形成が可能。成長投資枠は慣れてから考えればOK。</div>
+  </div>
+
+  <h3>パターン②：ボーナスや余剰資金がある人</h3>
+  <div class="use-case">
+    <div class="use-case-title">💰 つみたて枠 + 成長投資枠を併用</div>
+    <div class="use-case-body">つみたて投資枠で毎月5万円×20年＝1,200万円を積立しながら、ボーナス月に成長投資枠で一括投資するという組み合わせが人気です。両枠で合計1,800万円の非課税枠をフル活用できます。</div>
+  </div>
+
+  <h3>パターン③：個別株にも挑戦したい人</h3>
+  <div class="use-case">
+    <div class="use-case-title">📈 成長投資枠で個別株を購入</div>
+    <div class="use-case-body">つみたて投資枠でインデックスファンドを積立しながら、成長投資枠で興味のある個別株を購入する戦略。株主優待目的の投資にも成長投資枠が使えます。ただし個別株はリスクが高いため、慎重に検討を。</div>
+  </div>
+
+  <h2 id="start">まず始めるならどちら？</h2>
+  <p>結論として、<strong>投資初心者はつみたて投資枠から始めるのがおすすめ</strong>です。</p>
+  <p>つみたて投資枠は金融庁認定の投資信託のみが対象で、初心者でも継続しやすい仕組みです。成長投資枠は商品の選択肢が広がる分、知識が必要になります。まずはつみたて投資枠でインデックスファンドへの積立に慣れてから、成長投資枠を活用することをおすすめします。</p>
+
+  <div class="warn-box">
+    <div class="label">⚠️ 注意</div>
+    <p>投資は元本割れのリスクがあります。余裕資金の範囲内で、無理のない金額から始めましょう。成長投資枠で個別株に投資する場合は、十分な知識と情報収集が必要です。</p>
+  </div>
+
+  <div class="disclaimer">
+    <ul>
+      <li>掲載情報は2026年3月時点のものです。最新情報は金融庁・各証券会社の公式サイトをご確認ください。</li>
+      <li>本サイトはアフィリエイト広告を利用しています。</li>
+      <li>投資は元本割れのリスクがあります。最終的な判断はご自身でお願いします。</li>
+    </ul>
+  </div>
+</div>
+<footer><div class="footer-inner"><div class="footer-logo">新NISAガイド - Life Asset Lab</div><div class="footer-links"><a href="../privacy.html">プライバシーポリシー</a><a href="../disclaimer.html">免責事項</a><a href="../about.html">運営者情報</a></div><div class="footer-copy">Copyright © Life Asset Lab All Rights Reserved.</div></div></footer>
+</body>
+</html>
