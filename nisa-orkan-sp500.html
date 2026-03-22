@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>オルカン・S&P500を徹底比較！新NISAで買うべきはどっち？【2026年版】 - Life Asset Lab</title>
+<meta name="description" content="新NISAで人気のオルカン（eMAXIS Slim全世界株式）とS&P500を徹底比較。2026年最新の特徴・リスク・どちらを選ぶべきかを解説。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --primary: #e67e22; --text: #333; --muted: #666; --light: #888; --border: #ddd; --bg: #f5f5f5; --white: #fff; --pale: #fff8f0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.8; }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header { background: var(--white); border-bottom: 3px solid var(--primary); }
+  .header-inner { max-width: 980px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-size: 18px; font-weight: 700; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--primary); }
+  .back-btn { font-size: 12px; color: var(--primary); border: 1px solid var(--primary); padding: 6px 12px; border-radius: 3px; text-decoration: none; }
+  .back-btn:hover { background: var(--primary); color: var(--white); text-decoration: none; }
+  .notice { background: var(--pale); border-bottom: 1px solid #f0d0a0; padding: 6px 0; font-size: 12px; color: var(--light); text-align: center; }
+  .container { max-width: 820px; margin: 24px auto; padding: 0 16px 60px; }
+  .article-tag { display: inline-block; background: var(--primary); color: var(--white); font-size: 11px; padding: 3px 10px; border-radius: 2px; margin-bottom: 12px; }
+  .article-title { font-size: clamp(20px, 3.5vw, 28px); font-weight: 700; line-height: 1.4; margin-bottom: 12px; }
+  .article-meta { font-size: 12px; color: var(--light); margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .toc { background: var(--white); border: 1px solid var(--border); border-left: 4px solid var(--primary); padding: 16px 20px; margin: 24px 0; }
+  .toc-title { font-size: 13px; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+  .toc ol { padding-left: 18px; }
+  .toc li { margin-bottom: 6px; }
+  .toc a { font-size: 13px; color: var(--muted); }
+  h2 { font-size: 19px; font-weight: 700; border-left: 4px solid var(--primary); padding: 6px 0 6px 12px; margin: 40px 0 16px; }
+  h3 { font-size: 15px; font-weight: 700; color: var(--primary); margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+  p { font-size: 14px; margin-bottom: 16px; line-height: 1.9; }
+  .table-wrap { overflow-x: auto; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 400px; }
+  th { background: var(--primary); color: var(--white); padding: 10px 12px; text-align: left; font-weight: 700; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: #fafafa; }
+  .vs-wrap { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; margin: 24px 0; align-items: stretch; }
+  .vs-card { background: var(--white); border: 1px solid var(--border); padding: 20px 16px; border-radius: 4px; }
+  .vs-card.orkan { border-top: 4px solid #27ae60; }
+  .vs-card.sp500 { border-top: 4px solid #2980b9; }
+  .vs-label { font-size: 11px; color: var(--light); margin-bottom: 4px; }
+  .vs-name { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 12px; }
+  .vs-name.orkan { color: #27ae60; }
+  .vs-name.sp500 { color: #2980b9; }
+  .vs-merits { list-style: none; padding: 0; }
+  .vs-merits li { font-size: 13px; color: var(--muted); padding: 3px 0 3px 14px; position: relative; line-height: 1.7; }
+  .vs-merits li::before { content: '●'; position: absolute; left: 0; font-size: 8px; top: 7px; color: var(--light); }
+  .vs-divider { display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; color: var(--light); }
+  .point-box { background: var(--pale); border: 1px solid #f0d0a0; border-left: 4px solid var(--primary); padding: 14px 18px; margin: 20px 0; }
+  .point-box .label { font-size: 11px; font-weight: 700; color: var(--primary); letter-spacing: 1px; margin-bottom: 6px; }
+  .point-box p { margin: 0; font-size: 13px; }
+  .warn-box { background: #fff5f5; border-left: 4px solid #e74c3c; padding: 14px 18px; margin: 20px 0; }
+  .warn-box .label { font-size: 11px; font-weight: 700; color: #e74c3c; letter-spacing: 1px; margin-bottom: 6px; }
+  .warn-box p { margin: 0; font-size: 13px; color: var(--muted); }
+  .choose-box { background: var(--white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 20px 0; }
+  .choose-head { background: #f9f9f9; border-bottom: 1px solid var(--border); padding: 10px 16px; font-size: 13px; font-weight: 700; color: var(--muted); }
+  .choose-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .choose-item { display: flex; gap: 12px; align-items: flex-start; }
+  .choose-who { font-size: 12px; color: var(--white); background: var(--primary); padding: 3px 10px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
+  .choose-reason { font-size: 13px; color: var(--muted); }
+  .btn { display: inline-block; padding: 10px 22px; background: var(--primary); color: var(--white); border-radius: 3px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.15s; margin-top: 10px; }
+  .btn:hover { background: #c0392b; text-decoration: none; color: var(--white); }
+  .disclaimer { background: var(--white); border: 1px solid var(--border); padding: 12px 16px; font-size: 11px; color: var(--light); line-height: 1.8; margin-top: 40px; }
+  .disclaimer ul { padding-left: 14px; }
+  footer { background: #333; color: #aaa; padding: 24px 16px; font-size: 12px; }
+  .footer-inner { max-width: 980px; margin: 0 auto; }
+  .footer-logo { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+  .footer-links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+  .footer-links a { color: #aaa; text-decoration: none; }
+  .footer-copy { font-size: 11px; color: #666; }
+  @media (max-width: 560px) { .vs-wrap { grid-template-columns: 1fr; } .vs-divider { padding: 8px 0; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">新NISA<span>ガイド</span></a>
+    <a href="../index.html" class="back-btn">← トップへ戻る</a>
+  </div>
+</header>
+<div class="notice">※このページはプロモーションを含みます</div>
+
+<div class="container">
+  <div class="article-tag">銘柄比較</div>
+  <h1 class="article-title">オルカン・S&amp;P500を徹底比較！新NISAで買うべきはどっち？【2026年版】</h1>
+  <div class="article-meta">📅 2026年3月更新　🕐 読了時間：約8分</div>
+
+  <p>新NISAを始める際、多くの人が悩むのが「オルカン」と「S&amp;P500」のどちらを選ぶかです。2026年現在も両ファンドは純資産総額5兆円超えとなり、新NISAの定番として確固たる地位を築いています。本記事で両者の違いをわかりやすく解説します。</p>
+
+  <div class="toc">
+    <div class="toc-title">📋 目次</div>
+    <ol>
+      <li><a href="#what">オルカン・S&P500とは？</a></li>
+      <li><a href="#compare">2つの違いを徹底比較</a></li>
+      <li><a href="#performance">2026年の運用状況</a></li>
+      <li><a href="#choose">どちらを選ぶべきか？</a></li>
+      <li><a href="#howto">お得に始める方法</a></li>
+    </ol>
+  </div>
+
+  <h2 id="what">オルカン・S&P500とは？</h2>
+  <h3>オルカン（eMAXIS Slim 全世界株式）</h3>
+  <p>「オルカン」は「eMAXIS Slim 全世界株式（オール・カントリー）」の愛称です。約50カ国に上場する大型・中型株約3,000銘柄に投資する投資信託で、世界経済の成長をまるごと取り込む設計になっています。米国が約6割、他の先進国が約3割、新興国が約1割という構成です。</p>
+  <h3>S&P500（eMAXIS Slim 米国株式）</h3>
+  <p>「S&amp;P500」は米国を代表する500社の株価指数に連動する投資信託です。エヌビディア・アップル・マイクロソフト・アマゾン・メタなどの世界最大級のテクノロジー企業が上位を占めます。投資対象は米国のみですが、これらの企業はグローバルにビジネスを展開しています。</p>
+
+  <h2 id="compare">2つの違いを徹底比較</h2>
+  <div class="vs-wrap">
+    <div class="vs-card orkan">
+      <div class="vs-label">全世界分散型</div>
+      <div class="vs-name orkan">🌏 オルカン</div>
+      <ul class="vs-merits">
+        <li>約50カ国・約3,000銘柄に分散</li>
+        <li>米国リスクを一定程度分散できる</li>
+        <li>新興国の成長も取り込める</li>
+        <li>「これ1本で完結」できるシンプルさ</li>
+        <li>信託報酬：年0.05775%（超低コスト）</li>
+      </ul>
+    </div>
+    <div class="vs-divider">VS</div>
+    <div class="vs-card sp500">
+      <div class="vs-label">米国集中型</div>
+      <div class="vs-name sp500">🇺🇸 S&P500</div>
+      <ul class="vs-merits">
+        <li>米国トップ500社に集中投資</li>
+        <li>過去10年の平均リターンが高い</li>
+        <li>GAFAMなど成長企業の恩恵を最大限享受</li>
+        <li>「米国経済の成長」に集中できる</li>
+        <li>信託報酬：年0.09372%（低コスト）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <tr><th>比較項目</th><th>オルカン</th><th>S&P500</th></tr>
+      <tr><td>投資対象</td><td>全世界約50カ国</td><td>米国のみ</td></tr>
+      <tr><td>銘柄数</td><td>約3,000銘柄</td><td>500銘柄</td></tr>
+      <tr><td>米国の比率</td><td>約60%</td><td>100%</td></tr>
+      <tr><td>信託報酬</td><td>0.05775%</td><td>0.09372%</td></tr>
+      <tr><td>リスク</td><td>やや低め</td><td>やや高め（米国集中）</td></tr>
+      <tr><td>過去10年リターン（目安）</td><td>年率約14%</td><td>年率約15%</td></tr>
+    </table>
+  </div>
+
+  <h2 id="performance">2026年の運用状況</h2>
+  <p>2024年に新NISAがスタートして以来、両ファンドとも純資産総額が5兆円を超える人気ぶりです。2025年はトランプ大統領の発言などを受けて相場が不安定になる局面もありましたが、長期投資の観点では一時的な下落は安値での買い増し機会とも言えます。</p>
+  <p>2026年時点での注目点として、<strong>AIバブルの動向</strong>と<strong>円高・円安の為替リスク</strong>が挙げられます。S&amp;500はエヌビディアなどのAI関連株の比率が高いため、AI市場の変動に影響を受けやすい側面があります。</p>
+
+  <div class="point-box">
+    <div class="label">2026年のポイント</div>
+    <p>オルカンとS&amp;P500の上位10銘柄のうち9銘柄は共通（エヌビディア・アップル・マイクロソフト等）。実際の値動きはよく似ていることが多いです。「どっちが正解か」より「どちらも長く持ち続けること」が重要です。</p>
+  </div>
+
+  <h2 id="choose">どちらを選ぶべきか？</h2>
+  <div class="choose-box">
+    <div class="choose-head">あなたに合った選び方</div>
+    <div class="choose-body">
+      <div class="choose-item">
+        <div class="choose-who">オルカン</div>
+        <div class="choose-reason">米国だけに集中するのが不安な方、世界経済全体の成長を取り込みたい方、「これ1本で完結」させたい方</div>
+      </div>
+      <div class="choose-item">
+        <div class="choose-who">S&P500</div>
+        <div class="choose-reason">「今後も米国が世界経済を牽引する」と信じる方、より高いリターンを狙いたい方、GAFAMの成長を直接享受したい方</div>
+      </div>
+      <div class="choose-item">
+        <div class="choose-who">両方</div>
+        <div class="choose-reason">つみたて投資枠でオルカン、成長投資枠でS&P500という組み合わせも人気。ただし値動きが似るため分散効果は限定的</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn-box">
+    <div class="label">⚠️ 注意</div>
+    <p>どちらも株式投資信託のため元本割れのリスクがあります。2026年時点では高値圏での推移が続いており、短期的な下落の可能性もあります。長期投資（10〜20年以上）を前提に、余裕資金の範囲内で積立することをおすすめします。</p>
+  </div>
+
+  <h2 id="howto">お得に始める方法（クレカ積立）</h2>
+  <p>オルカンもS&amp;P500も、クレジットカード積立（クレカ積立）を使うとポイントが貯まってお得です。2026年時点でのクレカ積立でオルカン・S&amp;P500を購入できてポイントが貯まる証券会社は以下の4社です。</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>証券会社</th><th>対応カード</th><th>還元率（年会費無料カード）</th></tr>
+      <tr><td>SBI証券</td><td>三井住友カード（NL）</td><td>0.5%</td></tr>
+      <tr><td>楽天証券</td><td>楽天カード</td><td>最大1〜2%</td></tr>
+      <tr><td>マネックス証券</td><td>dカード</td><td>最大1.1%</td></tr>
+      <tr><td>三菱UFJ eスマート</td><td>au PAYカード</td><td>最大1.0%</td></tr>
+    </table>
+  </div>
+  <a href="nisa-compare.html" class="btn">証券会社の詳細比較を見る →</a>
+
+  <div class="disclaimer">
+    <ul>
+      <li>掲載情報は2026年3月時点のものです。最新情報は各社公式サイトをご確認ください。</li>
+      <li>本サイトはアフィリエイト広告を利用しています。</li>
+      <li>投資は元本割れのリスクがあります。過去の実績は将来の成果を保証するものではありません。</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">新NISAガイド - Life Asset Lab</div>
+    <div class="footer-links">
+      <a href="../privacy.html">プライバシーポリシー</a>
+      <a href="../disclaimer.html">免責事項</a>
+      <a href="../about.html">運営者情報</a>
+    </div>
+    <div class="footer-copy">Copyright © Life Asset Lab All Rights Reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
