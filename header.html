@@ -1,0 +1,58 @@
+<!-- 共通ヘッダー / header.html -->
+<!-- このファイルを編集すると全ページのヘッダーが一括更新されます -->
+
+<style>
+  .top-nav{background:#fff;border-bottom:1px solid #ddd;font-size:13px;overflow-x:auto;}
+  .top-nav-inner{max-width:980px;margin:0 auto;padding:0 16px;display:flex;align-items:stretch;white-space:nowrap;}
+  .top-nav a{display:inline-flex;align-items:center;padding:10px 16px;color:#333;border-right:1px solid #eee;font-weight:500;font-size:12px;line-height:1.4;text-align:center;transition:background .15s;text-decoration:none;}
+  .top-nav a:first-child{border-left:1px solid #eee;}
+  .top-nav a:hover{background:#fff8f0;color:#e67e22;}
+  .site-header{background:#fff;border-bottom:3px solid #e67e22;}
+  .header-inner{max-width:980px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;}
+  .site-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .logo-img{width:48px;height:48px;border-radius:6px;object-fit:cover;}
+  .logo-img-fallback{width:48px;height:48px;background:#e67e22;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;font-weight:700;display:none;}
+  .logo-title{font-size:20px;font-weight:700;color:#333;line-height:1.2;}
+  .logo-title span{color:#e67e22;}
+  .logo-sub{font-size:11px;color:#888;}
+  .header-nav{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;}
+  .header-nav a{padding:6px 12px;border:1px solid #e67e22;color:#e67e22;border-radius:3px;font-size:12px;font-weight:500;transition:all .15s;text-decoration:none;}
+  .header-nav a:hover,.header-nav a.active{background:#e67e22;color:#fff;text-decoration:none;}
+  .notice-bar{background:#fff8f0;border-bottom:1px solid #f0d0a0;padding:6px 0;font-size:12px;color:#888;text-align:center;}
+  @media(max-width:760px){.header-nav{display:none;}}
+</style>
+
+<div class="top-nav">
+  <div class="top-nav-inner">
+    <a href="/life-asset-lab/index.html">ホーム</a>
+    <a href="/life-asset-lab/articles/nisa-beginners.html">新NISAとは？</a>
+    <a href="/life-asset-lab/articles/nisa-compare.html">口座比較</a>
+    <a href="/life-asset-lab/articles/nisa-tsumitate-growth.html">つみたて・成長投資枠</a>
+    <a href="/life-asset-lab/articles/nisa-orkan-sp500.html">銘柄比較</a>
+    <a href="/life-asset-lab/articles/credit-card-best.html">クレカ積立</a>
+    <a href="/life-asset-lab/index.html#qa">Q&amp;A</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/life-asset-lab/index.html" class="site-logo">
+      <img src="/life-asset-lab/img/logo-icon.png" alt="新NISAガイド" class="logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-img-fallback">N</div>
+      <div>
+        <div class="logo-title">新NISA<span>ガイド</span></div>
+        <div class="logo-sub">初心者もわかるやさしい解説サイト - Life Asset Lab</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="/life-asset-lab/index.html">ホーム</a>
+      <a href="/life-asset-lab/articles/nisa-compare.html">証券会社比較</a>
+      <a href="/life-asset-lab/articles/nisa-orkan-sp500.html">銘柄比較</a>
+      <a href="/life-asset-lab/articles/credit-card-best.html">クレカ積立</a>
+      <a href="/life-asset-lab/about.html">運営者情報</a>
+    </nav>
+  </div>
+</header>
+
+<div class="notice-bar">※このページはプロモーションを含みます</div>
