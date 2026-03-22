@@ -3,105 +3,500 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ゆるっと新NISA｜初心者もわかるやさしい解説サイト - ゆるっと新NISA</title>
-<meta name="description" content="新NISAの始め方・証券会社比較・おすすめ銘柄を初心者向けにわかりやすく解説。口座開設から積立設定まで完全ガイド。2026年最新情報。">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<title>ゆるっと新NISA｜初心者向けやさしい新NISA解説サイト</title>
+<meta name="description" content="新NISAを初心者向けにやさしく解説。証券会社比較・銘柄の選び方・クレカ積立のポイント還元率まで2026年最新情報でわかりやすくお届けします。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Noto Sans JP',sans-serif;background:#f5f5f5;color:#333;font-size:14px;line-height:1.7;}
+body{font-family:'Noto Sans JP',sans-serif;background:#f8f5f1;color:#333;font-size:14px;line-height:1.7;}
 a{color:#e67e22;text-decoration:none;}
-a:hover{text-decoration:underline;color:#c0392b;}
+a:hover{color:#c0392b;text-decoration:underline;}
 img{max-width:100%;height:auto;display:block;}
-.page-inner{max-width:980px;margin:20px auto;padding:0 16px;display:grid;grid-template-columns:1fr 240px;gap:20px;}
-.sec-title{font-size:17px;font-weight:700;color:#333;border-left:4px solid #e67e22;padding:6px 0 6px 12px;margin-bottom:16px;margin-top:28px;}
-.sec-title:first-child{margin-top:0;}
-.quick-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px;}
-.quick-card{background:#fff;border:1px solid #ddd;border-radius:4px;overflow:hidden;text-decoration:none;display:block;transition:all .15s;box-shadow:0 1px 3px rgba(0,0,0,.06);}
-.quick-card:hover{border-color:#e67e22;box-shadow:0 2px 8px rgba(230,126,34,.15);text-decoration:none;}
-.quick-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#f5f5f5;}
-.quick-card-img-fallback{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#fef3e2,#fde8c0);display:flex;align-items:center;justify-content:center;font-size:28px;}
-.quick-card-body{padding:10px 12px 12px;}
-.quick-label{font-size:11px;color:#888;margin-bottom:4px;}
-.quick-title{font-size:13px;font-weight:700;color:#333;line-height:1.4;margin-bottom:4px;}
-.quick-count{font-size:18px;font-weight:700;color:#e67e22;}
-.quick-count span{font-size:12px;font-weight:400;color:#888;}
-.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px;}
-.article-card{background:#fff;border:1px solid #ddd;border-radius:4px;overflow:hidden;text-decoration:none;display:block;transition:all .15s;box-shadow:0 1px 3px rgba(0,0,0,.05);}
-.article-card:hover{border-color:#e67e22;box-shadow:0 3px 10px rgba(230,126,34,.15);text-decoration:none;}
-.article-thumb-wrap{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#f5f5f5;}
-.article-thumb-wrap img{width:100%;height:100%;object-fit:cover;}
-.article-thumb-fallback{width:100%;height:100%;background:linear-gradient(135deg,#fef3e2,#fde8c0);display:flex;align-items:center;justify-content:center;font-size:28px;}
-.article-thumb-label{position:absolute;top:6px;left:6px;background:#e67e22;color:#fff;font-size:10px;padding:2px 7px;border-radius:2px;font-weight:700;z-index:1;}
-.article-body{padding:10px 12px 14px;}
-.article-title{font-size:13px;font-weight:700;color:#333;line-height:1.5;}
-.article-card:hover .article-title{color:#e67e22;}
-.inline-pr{background:#fff8f0;border:1px solid #f0c070;border-radius:4px;padding:14px 16px;margin:16px 0 20px;}
-.inline-pr-label{font-size:11px;color:#e67e22;font-weight:700;letter-spacing:1px;margin-bottom:10px;}
-.inline-pr-items{display:flex;flex-direction:column;gap:8px;}
-.inline-pr-item{background:#fff;border:1px solid #f0c070;border-radius:3px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;}
-.inline-pr-name{font-size:13px;font-weight:700;color:#333;}
-.inline-pr-desc{font-size:11px;color:#888;margin-top:2px;}
-.inline-pr-btn{display:inline-block;padding:7px 16px;background:#e67e22;color:#fff;border-radius:3px;font-size:12px;font-weight:700;text-decoration:none;transition:background .15s;flex-shrink:0;white-space:nowrap;}
-.inline-pr-btn:hover{background:#c0392b;text-decoration:none;color:#fff;}
-.ranking-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:8px;}
-.ranking-card{background:#fff;border:1px solid #ddd;border-radius:4px;overflow:hidden;text-decoration:none;display:block;transition:all .15s;}
-.ranking-card:hover{border-color:#e67e22;text-decoration:none;}
-.ranking-thumb-wrap{width:100%;aspect-ratio:16/7;overflow:hidden;background:#f5f5f5;}
-.ranking-thumb-wrap img{width:100%;height:100%;object-fit:cover;}
-.ranking-thumb-fallback{width:100%;height:100%;background:linear-gradient(135deg,#e8f4fd,#c8e6fa);display:flex;align-items:center;justify-content:center;font-size:28px;}
-.ranking-body{padding:10px 12px 12px;}
-.ranking-title{font-size:13px;font-weight:700;color:#333;line-height:1.4;}
-.ranking-card:hover .ranking-title{color:#e67e22;}
-.news-list{background:#fff;border:1px solid #ddd;border-radius:4px;margin-bottom:8px;}
-.news-item{display:flex;align-items:flex-start;gap:12px;padding:10px 16px;border-bottom:1px solid #f0f0f0;font-size:13px;}
-.news-item:last-child{border-bottom:none;}
-.news-date{color:#888;white-space:nowrap;flex-shrink:0;font-size:12px;padding-top:1px;}
-.news-text a{color:#e67e22;}
-.pr-section{background:#fff;border:1px solid #ddd;border-radius:4px;margin-bottom:20px;overflow:hidden;}
-.pr-section-title{background:#f5f5f5;border-bottom:1px solid #ddd;padding:10px 16px;font-size:13px;font-weight:700;color:#555;text-align:center;}
-.pr-item{border-bottom:1px solid #f0f0f0;padding:18px 20px;}
-.pr-item:last-child{border-bottom:none;}
-.pr-name{font-size:15px;font-weight:700;color:#333;margin-bottom:4px;}
-.pr-name span{font-size:12px;color:#888;font-weight:400;margin-left:6px;}
-.pr-merit-title{font-size:12px;font-weight:700;color:#e67e22;margin-bottom:6px;}
-.pr-merits{list-style:none;padding:0;margin-bottom:10px;}
-.pr-merits li{font-size:13px;color:#444;padding:2px 0 2px 16px;position:relative;line-height:1.6;}
-.pr-merits li::before{content:'・';position:absolute;left:4px;color:#e67e22;}
-.pr-btn{display:inline-block;padding:9px 20px;background:#e67e22;color:#fff;border-radius:3px;font-size:13px;font-weight:700;text-decoration:none;transition:background .15s;}
-.pr-btn:hover{background:#c0392b;text-decoration:none;color:#fff;}
-.sidebar-box{background:#fff;border:1px solid #ddd;border-radius:4px;margin-bottom:16px;overflow:hidden;}
-.sidebar-title{background:#e67e22;color:#fff;padding:8px 14px;font-size:13px;font-weight:700;}
-.sidebar-list{padding:0;}
-.sidebar-item{display:flex;align-items:flex-start;gap:8px;padding:9px 14px;border-bottom:1px solid #f0f0f0;text-decoration:none;transition:background .15s;}
-.sidebar-item:last-child{border-bottom:none;}
-.sidebar-item:hover{background:#fff8f0;text-decoration:none;}
-.sidebar-rank{font-size:14px;font-weight:700;color:#ccc;width:20px;flex-shrink:0;text-align:center;line-height:1.5;}
-.sidebar-item:nth-child(1) .sidebar-rank{color:#d4a017;}
-.sidebar-item:nth-child(2) .sidebar-rank{color:#9e9e9e;}
-.sidebar-item:nth-child(3) .sidebar-rank{color:#a0714f;}
-.sidebar-text{font-size:12px;color:#333;line-height:1.5;}
-.sidebar-more{display:block;text-align:center;padding:8px;font-size:12px;color:#e67e22;border-top:1px solid #f0f0f0;text-decoration:none;}
-.sidebar-more:hover{background:#fff8f0;text-decoration:none;}
-.sidebar-pr{background:#fff;border:1px solid #ddd;border-radius:4px;margin-bottom:16px;overflow:hidden;}
-.sidebar-pr-label{background:#f5f5f5;border-bottom:1px solid #ddd;padding:6px 14px;font-size:11px;color:#888;text-align:center;letter-spacing:1px;}
-.sidebar-pr-body{padding:14px;text-align:center;}
-.sidebar-pr-name{font-size:14px;font-weight:700;color:#333;margin-bottom:6px;}
-.sidebar-pr-desc{font-size:12px;color:#666;margin-bottom:10px;line-height:1.6;}
-.sidebar-pr-btn{display:block;padding:9px;background:#e67e22;color:#fff;border-radius:3px;font-size:13px;font-weight:700;text-align:center;text-decoration:none;}
-.sidebar-pr-btn:hover{background:#c0392b;text-decoration:none;color:#fff;}
-.disclaimer-box{background:#fff;border:1px solid #ddd;border-radius:4px;padding:14px 16px;font-size:11px;color:#888;line-height:1.8;margin-bottom:20px;}
-.disclaimer-box ul{padding-left:14px;}.disclaimer-box li{margin-bottom:4px;}
-.site-footer{background:#333;color:#aaa;padding:28px 16px 20px;margin-top:32px;font-size:12px;}
-.footer-inner{max-width:980px;margin:0 auto;}
-.footer-logo{font-size:16px;font-weight:700;color:#fff;margin-bottom:12px;}
-.footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;}
-.footer-links a{color:#aaa;font-size:12px;text-decoration:none;}.footer-links a:hover{color:#fff;}
-.footer-copy{font-size:11px;color:#666;}
-@media(max-width:760px){
-  .page-inner{grid-template-columns:1fr;}
-  .article-grid{grid-template-columns:repeat(2,1fr);}
-  .quick-links{grid-template-columns:1fr;}
-  .ranking-grid{grid-template-columns:1fr;}
+
+/* ===== ヒーローバナー（参考元にはない独自要素） ===== */
+.hero {
+  background: linear-gradient(135deg, #fff8f0 0%, #fef3e2 100%);
+  border-bottom: 1px solid #f0d5b8;
+  padding: 28px 20px;
+}
+.hero-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.hero-text h1 {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 800;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.hero-text h1 em { font-style: normal; color: #e67e22; }
+.hero-text p { font-size: 13px; color: #666; max-width: 480px; }
+.hero-badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  background: #fff;
+  border: 1px solid #f0c080;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #e67e22;
+  font-weight: 600;
+}
+.hero-stats {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.hero-stat {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #f0d0a0;
+  border-radius: 12px;
+  padding: 14px 20px;
+  min-width: 80px;
+}
+.hero-stat-num {
+  font-size: 24px;
+  font-weight: 800;
+  color: #e67e22;
+  line-height: 1;
+}
+.hero-stat-label { font-size: 11px; color: #999; margin-top: 4px; }
+
+/* ===== レイアウト ===== */
+.page-wrap {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 24px;
+}
+
+/* ===== セクション見出し（参考元は左ボーダーだが、こちらはタブ型） ===== */
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  margin-top: 28px;
+}
+.sec-head:first-child { margin-top: 0; }
+.sec-head-icon {
+  width: 32px;
+  height: 32px;
+  background: #e67e22;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.sec-head h2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #222;
+}
+.sec-head-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, #f0d0a0, transparent);
+}
+
+/* ===== マガジン型記事レイアウト（参考元は3列グリッドだが、こちらは2列+リスト混在） ===== */
+.mag-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.mag-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.mag-card:hover {
+  border-color: #e67e22;
+  box-shadow: 0 4px 16px rgba(230,126,34,0.15);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.mag-card.featured {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+}
+.mag-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #fef3e2;
+  position: relative;
+}
+.mag-card.featured .mag-thumb {
+  width: 260px;
+  flex-shrink: 0;
+  aspect-ratio: unset;
+}
+.mag-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.mag-thumb-fallback {
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, #fef3e2, #fde8c0);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+}
+.mag-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: #e67e22;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.mag-body { padding: 12px 14px 14px; flex: 1; }
+.mag-cat {
+  font-size: 11px;
+  color: #e67e22;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.mag-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.5;
+}
+.mag-card.featured .mag-title { font-size: 15px; }
+.mag-card:hover .mag-title { color: #e67e22; }
+.mag-meta { font-size: 11px; color: #bbb; margin-top: 6px; }
+
+/* 横リスト型記事（参考元にはない形式） */
+.article-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+.article-row {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.article-row:hover {
+  border-color: #e67e22;
+  background: #fff8f2;
+  text-decoration: none;
+}
+.article-row-num {
+  font-size: 18px;
+  font-weight: 800;
+  color: #f0d0a0;
+  width: 28px;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 1;
+}
+.article-row:nth-child(1) .article-row-num { color: #f0a500; }
+.article-row:nth-child(2) .article-row-num { color: #b0b0b0; }
+.article-row:nth-child(3) .article-row-num { color: #c08060; }
+.article-row-cat {
+  font-size: 10px;
+  background: #fff3e6;
+  color: #e67e22;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.article-row-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+  flex: 1;
+}
+.article-row:hover .article-row-title { color: #e67e22; }
+.article-row-arrow { color: #ddd; flex-shrink: 0; font-size: 14px; }
+
+/* ===== インラインPR（帯型・参考元とは異なるデザイン） ===== */
+.pr-band {
+  background: linear-gradient(135deg, #fff8f0, #fef3e2);
+  border: 1px solid #f0c080;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 20px 0;
+}
+.pr-band-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #e67e22;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pr-band-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #f0d0a0;
+}
+.pr-band-items { display: flex; flex-direction: column; gap: 8px; }
+.pr-band-item {
+  background: #fff;
+  border: 1px solid #f0d0a0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.pr-band-info {}
+.pr-band-name { font-size: 13px; font-weight: 700; color: #333; }
+.pr-band-desc { font-size: 11px; color: #999; margin-top: 2px; }
+.pr-band-btn {
+  display: inline-block;
+  padding: 7px 16px;
+  background: #e67e22;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.pr-band-btn:hover { background: #c0392b; text-decoration: none; color: #fff; }
+
+/* ===== お知らせ ===== */
+.news-box {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.news-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 13px;
+  align-items: flex-start;
+}
+.news-row:last-child { border-bottom: none; }
+.news-date { font-size: 11px; color: #bbb; white-space: nowrap; padding-top: 1px; flex-shrink: 0; }
+.news-row a { color: #e67e22; }
+
+/* ===== 証券会社PR（縦並び詳細）===== */
+.sec-pr-wrap {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.sec-pr-head {
+  background: #f8f5f1;
+  border-bottom: 1px solid #eee;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.sec-pr-item { border-bottom: 1px solid #f5f5f5; padding: 16px 18px; }
+.sec-pr-item:last-child { border-bottom: none; }
+.sec-pr-name { font-size: 15px; font-weight: 700; color: #222; margin-bottom: 3px; }
+.sec-pr-tag { font-size: 11px; color: #e67e22; font-weight: 600; margin-bottom: 8px; }
+.sec-pr-points { list-style: none; padding: 0; margin-bottom: 10px; }
+.sec-pr-points li {
+  font-size: 12px;
+  color: #555;
+  padding: 2px 0 2px 14px;
+  position: relative;
+  line-height: 1.6;
+}
+.sec-pr-points li::before { content: '✓'; position: absolute; left: 0; color: #e67e22; font-weight: 700; }
+.sec-pr-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #e67e22;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.sec-pr-btn:hover { background: #c0392b; text-decoration: none; color: #fff; }
+
+/* ===== サイドバー（メダル型ランキング） ===== */
+.side-box {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.side-head {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #e67e22, #f39c12);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.side-list { padding: 0; }
+.side-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #f5f5f5;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.side-item:last-child { border-bottom: none; }
+.side-item:hover { background: #fff8f2; text-decoration: none; }
+.side-medal {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.side-medal.m1 { background: linear-gradient(135deg, #f0b429, #e8920a); }
+.side-medal.m2 { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); }
+.side-medal.m3 { background: linear-gradient(135deg, #cd7f32, #b06020); }
+.side-medal.mn { background: #f0f0f0; color: #999; font-size: 11px; }
+.side-text { font-size: 12px; color: #333; line-height: 1.5; flex: 1; }
+.side-more {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  color: #e67e22;
+  border-top: 1px solid #f5f5f5;
+  text-decoration: none;
+}
+.side-more:hover { background: #fff8f2; text-decoration: none; }
+
+/* サイドバーPR */
+.side-pr {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.side-pr-label {
+  background: #f8f5f1;
+  border-bottom: 1px solid #eee;
+  padding: 6px 14px;
+  font-size: 10px;
+  color: #bbb;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.side-pr-body { padding: 14px; text-align: center; }
+.side-pr-name { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 6px; }
+.side-pr-desc { font-size: 12px; color: #888; margin-bottom: 10px; line-height: 1.6; }
+.side-pr-btn {
+  display: block;
+  padding: 10px;
+  background: #e67e22;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.side-pr-btn:hover { background: #c0392b; text-decoration: none; color: #fff; }
+
+/* Q&A */
+.qa-box { background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; }
+.qa-item { border-bottom: 1px solid #f5f5f5; padding: 14px 16px; }
+.qa-item:last-child { border-bottom: none; }
+.qa-q { font-size: 13px; font-weight: 700; color: #e67e22; margin-bottom: 6px; display: flex; gap: 8px; }
+.qa-q::before { content: 'Q'; background: #e67e22; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; }
+.qa-a { font-size: 13px; color: #555; line-height: 1.8; padding-left: 28px; }
+
+/* 免責 */
+.disc-box {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 12px 16px;
+  font-size: 11px;
+  color: #bbb;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.disc-box ul { padding-left: 14px; }
+.disc-box li { margin-bottom: 3px; }
+
+/* フッター */
+.site-footer {
+  background: #222;
+  color: #888;
+  padding: 32px 20px 20px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.site-footer-inner { max-width: 1000px; margin: 0 auto; }
+.footer-brand { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.footer-brand em { font-style: normal; color: #e67e22; }
+.footer-tagline { font-size: 12px; color: #666; margin-bottom: 16px; }
+.footer-links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.footer-links a { color: #666; text-decoration: none; }
+.footer-links a:hover { color: #fff; }
+.footer-copy { font-size: 11px; color: #444; }
+
+@media(max-width:700px){
+  .page-wrap{grid-template-columns:1fr;}
+  .mag-grid{grid-template-columns:1fr;}
+  .mag-card.featured{flex-direction:column;}
+  .mag-card.featured .mag-thumb{width:100%;aspect-ratio:16/9;}
+  .hero-stats{display:none;}
+  .hero-inner{flex-direction:column;align-items:flex-start;}
 }
 </style>
 </head>
@@ -111,163 +506,351 @@ img{max-width:100%;height:auto;display:block;}
 <div id="site-header"></div>
 <script src="js/header-loader.js"></script>
 
-<div class="page-inner">
+<!-- ヒーローバナー -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>難しいことは抜きで、<br><em>新NISAをはじめよう。</em></h1>
+      <p>証券会社の選び方・銘柄の選び方・クレカ積立のお得な使い方まで、初心者向けにやさしく解説します。</p>
+      <div class="hero-badges">
+        <span class="hero-badge">✅ 2026年最新情報</span>
+        <span class="hero-badge">✅ 全記事無料</span>
+        <span class="hero-badge">✅ 広告表示あり</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">記事数</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4社</div>
+        <div class="hero-stat-label">証券会社比較</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">毎月</div>
+        <div class="hero-stat-label">情報更新</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
   <main>
-    <div class="quick-links">
-      <a href="articles/nisa-compare.html" class="quick-card">
-        <img src="img/icon-account.png" alt="口座比較表" class="quick-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="quick-card-img-fallback" style="display:none">🏦</div>
-        <div class="quick-card-body"><div class="quick-label">＼ 口座から探す ／</div><div class="quick-title">新NISA 口座比較表</div><div class="quick-count">5<span>社</span></div></div>
+
+    <!-- 人気記事（マガジン型） -->
+    <div class="sec-head">
+      <div class="sec-head-icon">📰</div>
+      <h2>人気の記事</h2>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <div class="mag-grid">
+      <!-- フィーチャー記事（横長） -->
+      <a href="articles/nisa-beginners.html" class="mag-card featured">
+        <div class="mag-thumb">
+          <img src="img/thumb-nisa-what.png" alt="新NISAとは？" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="mag-thumb-fallback" style="display:none">📊</div>
+          <div class="mag-badge">🔥 人気No.1</div>
+        </div>
+        <div class="mag-body">
+          <div class="mag-cat">入門・制度解説</div>
+          <div class="mag-title">【2026年版】新NISAとは？メリット・デメリット・始め方を完全解説</div>
+          <div class="mag-meta">2026.03更新 ・ 読了約10分</div>
+        </div>
       </a>
-      <a href="articles/nisa-tsumitate-growth.html" class="quick-card">
-        <img src="img/icon-fund-tsumitate.png" alt="銘柄比較表" class="quick-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="quick-card-img-fallback" style="display:none">📊</div>
-        <div class="quick-card-body"><div class="quick-label">＼ 銘柄から探す ／</div><div class="quick-title">銘柄比較表（つみたて投資枠）</div><div class="quick-count">234<span>本</span></div></div>
+
+      <a href="articles/nisa-compare.html" class="mag-card">
+        <div class="mag-thumb">
+          <img src="img/thumb-compare.png" alt="証券会社比較" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="mag-thumb-fallback" style="display:none">🏦</div>
+          <div class="mag-badge">比較</div>
+        </div>
+        <div class="mag-body">
+          <div class="mag-cat">証券会社比較</div>
+          <div class="mag-title">新NISA口座はどこがいい？主要4社を徹底比較【2026年最新】</div>
+          <div class="mag-meta">2026.03更新</div>
+        </div>
       </a>
-      <a href="articles/credit-card-best.html" class="quick-card">
-        <img src="img/icon-fund-growth.png" alt="クレカ積立" class="quick-card-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="quick-card-img-fallback" style="display:none">💳</div>
-        <div class="quick-card-body"><div class="quick-label">＼ お得に積立 ／</div><div class="quick-title">クレカ積立ポイント還元率</div><div class="quick-count">比較<span>中</span></div></div>
+
+      <a href="articles/credit-card-best.html" class="mag-card">
+        <div class="mag-thumb">
+          <img src="img/thumb-credit.png" alt="クレカ積立" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="mag-thumb-fallback" style="display:none">💳</div>
+          <div class="mag-badge">お得</div>
+        </div>
+        <div class="mag-body">
+          <div class="mag-cat">クレカ積立</div>
+          <div class="mag-title">クレカ積立ポイント還元率ランキング【2026年最新】</div>
+          <div class="mag-meta">2026.03更新</div>
+        </div>
       </a>
     </div>
 
-    <div class="sec-title" id="articles">新NISAのここが知りたい！</div>
-    <div class="article-grid">
-      <a href="articles/nisa-beginners.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-nisa-what.png" alt="新NISAとは？" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">📊</div><div class="article-thumb-label">入門</div></div>
-        <div class="article-body"><div class="article-title">【2026年版】新NISAとは？メリット・デメリット・始め方を完全解説</div></div>
-      </a>
-      <a href="articles/nisa-compare.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-compare.png" alt="証券会社比較" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">🏦</div><div class="article-thumb-label">比較</div></div>
-        <div class="article-body"><div class="article-title">結局、新NISA口座はどこがいい？証券会社を徹底比較【2026年最新】</div></div>
-      </a>
-      <a href="articles/nisa-tsumitate-growth.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-compare.png" alt="つみたて・成長投資枠" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">🗂️</div><div class="article-thumb-label">制度</div></div>
-        <div class="article-body"><div class="article-title">新NISAの成長投資枠とつみたて投資枠をわかりやすく解説【2026年版】</div></div>
-      </a>
-      <a href="articles/nisa-orkan-sp500.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-sp500.png" alt="オルカンvsS&P500" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">🌏</div><div class="article-thumb-label">銘柄比較</div></div>
-        <div class="article-body"><div class="article-title">オルカン・S&amp;P500を徹底比較！新NISAで買うべきはどっち？【2026年版】</div></div>
-      </a>
-      <a href="articles/nisa-simulation.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-nisa-what.png" alt="運用シミュレーション" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">📅</div><div class="article-thumb-label">計算</div></div>
-        <div class="article-body"><div class="article-title">新NISAの運用シミュレーション｜金額・利回り・期間別に試算【2026年版】</div></div>
-      </a>
-      <a href="articles/nisa-ideco.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-compare.png" alt="新NISAとiDeCo比較" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">💰</div><div class="article-thumb-label">比較</div></div>
-        <div class="article-body"><div class="article-title">新NISAとiDeCoはどちらを優先すべき？違いを徹底比較【2026年版】</div></div>
-      </a>
-      <a href="articles/fukugyo-ranking.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-fukugyo.png" alt="副業ランキング" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">💼</div><div class="article-thumb-label">副業</div></div>
-        <div class="article-body"><div class="article-title">月5万円を目指す副業ランキング2025年最新版</div></div>
-      </a>
-      <a href="articles/nisa-beginners.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-nisa-what.png" alt="新NISA銘柄の選び方" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">📈</div><div class="article-thumb-label">銘柄</div></div>
-        <div class="article-body"><div class="article-title">結局どれを買えばいい？新NISA銘柄おすすめの選び方</div></div>
-      </a>
-      <a href="articles/credit-card-best.html" class="article-card">
-        <div class="article-thumb-wrap"><img src="img/thumb-credit.png" alt="クレカ積立ランキング" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="article-thumb-fallback" style="display:none">💳</div><div class="article-thumb-label">クレカ</div></div>
-        <div class="article-body"><div class="article-title">新NISAのクレカ積立おすすめ比較【2026年最新】ポイント還元率ランキング</div></div>
-      </a>
-    </div>
-
-    <div class="inline-pr">
-      <div class="inline-pr-label">📢 PR・おすすめ証券会社</div>
-      <div class="inline-pr-items">
-        <div class="inline-pr-item"><div><div class="inline-pr-name">マネックス証券｜dカード積立でNISA口座一律1.1%還元</div><div class="inline-pr-desc">年会費無料カードで業界最高還元率。つみたて234本・成長1,800本以上。</div></div><a href="#" class="inline-pr-btn">無料開設 →</a></div>
-        <div class="inline-pr-item"><div><div class="inline-pr-name">SBI証券｜国内最多水準の銘柄数</div><div class="inline-pr-desc">つみたて234本・成長1,243本。三井住友カード積立（年10万円以上利用時）でVポイント還元。</div></div><a href="#" class="inline-pr-btn">無料開設 →</a></div>
-        <div class="inline-pr-item"><div><div class="inline-pr-name">楽天証券｜楽天ポイントで投資できる</div><div class="inline-pr-desc">楽天カード積立で月5万円まで1%還元。貯まったポイントをそのまま投資に使える。</div></div><a href="#" class="inline-pr-btn">無料開設 →</a></div>
+    <!-- インラインPR -->
+    <div class="pr-band">
+      <div class="pr-band-label">📢 PR・おすすめ証券会社</div>
+      <div class="pr-band-items">
+        <div class="pr-band-item">
+          <div class="pr-band-info">
+            <div class="pr-band-name">マネックス証券｜dカード積立でNISA口座一律1.1%還元</div>
+            <div class="pr-band-desc">年会費無料カードで業界最高水準・つみたて234本・成長1,800本以上</div>
+          </div>
+          <a href="#" class="pr-band-btn">無料開設 →</a>
+        </div>
+        <div class="pr-band-item">
+          <div class="pr-band-info">
+            <div class="pr-band-name">SBI証券｜つみたて234本・成長1,243本</div>
+            <div class="pr-band-desc">国内最多水準のラインナップ。三井住友カード積立でVポイント還元</div>
+          </div>
+          <a href="#" class="pr-band-btn">無料開設 →</a>
+        </div>
+        <div class="pr-band-item">
+          <div class="pr-band-info">
+            <div class="pr-band-name">楽天証券｜楽天ポイントで投資できる</div>
+            <div class="pr-band-desc">楽天カード積立で月5万円まで1%還元。ポイントで再投資もできる</div>
+          </div>
+          <a href="#" class="pr-band-btn">無料開設 →</a>
+        </div>
       </div>
     </div>
 
-    <div class="sec-title" id="ranking">新NISAのランキング</div>
-    <div class="ranking-grid">
-      <a href="articles/nisa-orkan-sp500.html" class="ranking-card">
-        <div class="ranking-thumb-wrap"><img src="img/thumb-nisa-what.png" alt="銘柄ランキング（つみたて投資枠）" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ranking-thumb-fallback" style="display:none">🏆</div></div>
-        <div class="ranking-body"><div class="ranking-title">新NISA銘柄ランキング（つみたて投資枠）</div></div>
+    <!-- 全記事リスト -->
+    <div class="sec-head">
+      <div class="sec-head-icon">📚</div>
+      <h2>すべての記事</h2>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <div class="article-list">
+      <a href="articles/nisa-beginners.html" class="article-row">
+        <div class="article-row-num">1</div>
+        <div class="article-row-cat">入門</div>
+        <div class="article-row-title">【2026年版】新NISAとは？メリット・デメリット・始め方を完全解説</div>
+        <div class="article-row-arrow">›</div>
       </a>
-      <a href="articles/nisa-orkan-sp500.html" class="ranking-card">
-        <div class="ranking-thumb-wrap"><img src="img/thumb-sp500.png" alt="銘柄ランキング（成長投資枠）" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ranking-thumb-fallback" style="display:none">📊</div></div>
-        <div class="ranking-body"><div class="ranking-title">新NISA銘柄ランキング（成長投資枠）</div></div>
+      <a href="articles/nisa-compare.html" class="article-row">
+        <div class="article-row-num">2</div>
+        <div class="article-row-cat">証券会社比較</div>
+        <div class="article-row-title">新NISA口座はどこがいい？主要4社を徹底比較【2026年最新】</div>
+        <div class="article-row-arrow">›</div>
       </a>
-      <a href="articles/nisa-simulation.html" class="ranking-card">
-        <div class="ranking-thumb-wrap"><img src="img/thumb-compare.png" alt="利回りシミュレーション" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ranking-thumb-fallback" style="display:none">📈</div></div>
-        <div class="ranking-body"><div class="ranking-title">新NISA利回りシミュレーション</div></div>
+      <a href="articles/nisa-tsumitate-growth.html" class="article-row">
+        <div class="article-row-num">3</div>
+        <div class="article-row-cat">制度解説</div>
+        <div class="article-row-title">成長投資枠とつみたて投資枠の違いをわかりやすく解説【2026年版】</div>
+        <div class="article-row-arrow">›</div>
       </a>
-      <a href="articles/credit-card-best.html" class="ranking-card">
-        <div class="ranking-thumb-wrap"><img src="img/thumb-credit.png" alt="クレカ積立ランキング" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ranking-thumb-fallback" style="display:none">💳</div></div>
-        <div class="ranking-body"><div class="ranking-title">新NISAクレカ積立ポイント還元率ランキング</div></div>
+      <a href="articles/nisa-orkan-sp500.html" class="article-row">
+        <div class="article-row-num">4</div>
+        <div class="article-row-cat">銘柄比較</div>
+        <div class="article-row-title">オルカン vs S&amp;P500を徹底比較！新NISAで買うべきはどっち？【2026年版】</div>
+        <div class="article-row-arrow">›</div>
+      </a>
+      <a href="articles/nisa-simulation.html" class="article-row">
+        <div class="article-row-num">5</div>
+        <div class="article-row-cat">シミュレーター</div>
+        <div class="article-row-title">新NISAの積立シミュレーション｜金額・利回り・期間別に試算【2026年版】</div>
+        <div class="article-row-arrow">›</div>
+      </a>
+      <a href="articles/nisa-ideco.html" class="article-row">
+        <div class="article-row-num">6</div>
+        <div class="article-row-cat">制度比較</div>
+        <div class="article-row-title">新NISAとiDeCoはどちらを優先すべき？違いを徹底比較【2026年版】</div>
+        <div class="article-row-arrow">›</div>
+      </a>
+      <a href="articles/credit-card-best.html" class="article-row">
+        <div class="article-row-num">7</div>
+        <div class="article-row-cat">クレカ積立</div>
+        <div class="article-row-title">新NISAのクレカ積立おすすめ比較【2026年最新】ポイント還元率ランキング</div>
+        <div class="article-row-arrow">›</div>
       </a>
     </div>
 
-    <div class="sec-title">お知らせ</div>
-    <div class="news-list">
-      <div class="news-item"><div class="news-date">2026.03.01</div><div class="news-text">全記事を2026年最新情報に更新しました。</div></div>
-      <div class="news-item"><div class="news-date">2026.03.01</div><div class="news-text"><a href="articles/nisa-ideco.html">新NISAとiDeCoはどちらを優先すべき？</a>を公開しました。</div></div>
-      <div class="news-item"><div class="news-date">2026.03.01</div><div class="news-text"><a href="articles/nisa-compare.html">結局、新NISA口座はどこがいい？証券会社を徹底比較</a>を更新しました。</div></div>
-      <div class="news-item"><div class="news-date">2025.01.01</div><div class="news-text">ゆるっと新NISA「ゆるっと新NISA」をオープンしました。</div></div>
+    <!-- お知らせ -->
+    <div class="sec-head" style="margin-top:28px;">
+      <div class="sec-head-icon">🔔</div>
+      <h2>お知らせ</h2>
+      <div class="sec-head-line"></div>
+    </div>
+    <div class="news-box">
+      <div class="news-row"><div class="news-date">2026.03</div><div>全記事を2026年最新情報に更新しました。</div></div>
+      <div class="news-row"><div class="news-date">2026.03</div><div><a href="articles/nisa-ideco.html">新NISAとiDeCoはどちらを優先すべき？</a>を公開しました。</div></div>
+      <div class="news-row"><div class="news-date">2026.03</div><div><a href="articles/nisa-compare.html">証券会社徹底比較【2026年最新】</a>を更新しました。</div></div>
+      <div class="news-row"><div class="news-date">2025.01</div><div>「ゆるっと新NISA」をオープンしました。</div></div>
     </div>
 
-    <div class="sec-title" id="pr">さっそく始めたい人に｜各社の推しポイント</div>
-    <div class="pr-section">
-      <div class="pr-section-title">PR・広告</div>
-      <div class="pr-item"><div class="pr-name">マネックス証券<span>（年会費無料dカードで業界最高還元率）</span></div><div class="pr-merit-title">＼dカード積立でNISA口座一律1.1%還元／</div><ul class="pr-merits"><li>つみたて投資枠234本・成長投資枠1,800本以上！取引手数料無料！</li><li>dカード（年会費無料）でNISA口座への積立が積立額問わず一律1.1%還元！</li><li>米国株の取扱銘柄数が業界最多水準（約7,000銘柄）</li></ul><a href="#" class="pr-btn">詳細はこちら →</a></div>
-      <div class="pr-item"><div class="pr-name">SBI証券<span>（三井住友カード会員にメリット）</span></div><div class="pr-merit-title">＼三井住友カード会員にメリット／</div><ul class="pr-merits"><li>つみたて投資枠234本・成長投資枠1,243本！株も投資信託も取引手数料無料！</li><li>投資信託の保有残高に応じて毎月Vポイントが貯まる投信マイレージが充実！</li><li>三井住友カード積立：年間10万円以上利用時に0.5〜3%のVポイント還元</li></ul><a href="#" class="pr-btn">詳細はこちら →</a></div>
-      <div class="pr-item"><div class="pr-name">楽天証券<span>（楽天会員にメリット）</span></div><div class="pr-merit-title">＼楽天会員にメリット／</div><ul class="pr-merits"><li>新NISA商品ラインナップが豊富！株も投資信託も取引手数料無料！</li><li>楽天カード積立：月5万円まで1%、プレミアムカードなら月5万円まで2%還元！</li><li>貯まった楽天ポイントをそのままNISA口座での投資信託購入に使える！</li></ul><a href="#" class="pr-btn">詳細はこちら →</a></div>
-      <div class="pr-item"><div class="pr-name">松井証券<span>（サポート重視の初心者向け）</span></div><div class="pr-merit-title">＼オリコン顧客満足度ランキング1位（2026年）／</div><ul class="pr-merits"><li>日本株・米国株・投資信託の取引手数料がすべて無料！</li><li>毎月エントリーで投信保有残高の最大1%ポイントバック！業界最高還元率！</li><li>問い合わせ窓口格付け14年連続三つ星。平日夜・土日も電話サポート対応。</li></ul><a href="#" class="pr-btn">詳細はこちら →</a></div>
+    <!-- 証券会社PR詳細 -->
+    <div class="sec-head" style="margin-top:28px;" id="pr">
+      <div class="sec-head-icon">🏦</div>
+      <h2>さっそく始めたい方へ</h2>
+      <div class="sec-head-line"></div>
+    </div>
+    <div class="sec-pr-wrap">
+      <div class="sec-pr-head">PR・広告</div>
+      <div class="sec-pr-item">
+        <div class="sec-pr-name">マネックス証券</div>
+        <div class="sec-pr-tag">＼dカード積立でNISA口座一律1.1%還元／</div>
+        <ul class="sec-pr-points">
+          <li>つみたて234本・成長1,800本以上！取引手数料完全無料</li>
+          <li>dカード（年会費無料）でNISA口座積立が積立額問わず一律1.1%還元</li>
+          <li>米国株の取扱銘柄数が業界最多水準（約7,000銘柄）</li>
+        </ul>
+        <a href="#" class="sec-pr-btn">詳細はこちら →</a>
+      </div>
+      <div class="sec-pr-item">
+        <div class="sec-pr-name">SBI証券</div>
+        <div class="sec-pr-tag">＼三井住友カード会員にメリット／</div>
+        <ul class="sec-pr-points">
+          <li>つみたて234本・成長1,243本！取引手数料完全無料</li>
+          <li>三井住友カード積立：年間10万円以上利用時に0.5〜3%のVポイント還元</li>
+          <li>投信マイレージで保有残高に応じて毎月Vポイントが貯まる</li>
+        </ul>
+        <a href="#" class="sec-pr-btn">詳細はこちら →</a>
+      </div>
+      <div class="sec-pr-item">
+        <div class="sec-pr-name">楽天証券</div>
+        <div class="sec-pr-tag">＼楽天会員にメリット／</div>
+        <ul class="sec-pr-points">
+          <li>取引手数料完全無料！楽天カード積立で月5万円まで1%還元</li>
+          <li>貯まった楽天ポイントをそのままNISA口座の投資信託購入に使える</li>
+          <li>楽天プレミアムカードなら月5万円まで2%還元</li>
+        </ul>
+        <a href="#" class="sec-pr-btn">詳細はこちら →</a>
+      </div>
+      <div class="sec-pr-item">
+        <div class="sec-pr-name">松井証券</div>
+        <div class="sec-pr-tag">＼オリコン顧客満足度ランキング1位（2026年）／</div>
+        <ul class="sec-pr-points">
+          <li>日本株・米国株・投資信託の取引手数料がすべて無料</li>
+          <li>毎月エントリーで投信保有残高の最大1%ポイントバック</li>
+          <li>問い合わせ窓口格付け14年連続三つ星。平日夜・土日も電話対応</li>
+        </ul>
+        <a href="#" class="sec-pr-btn">詳細はこちら →</a>
+      </div>
     </div>
 
-    <div class="sec-title" id="qa">よくある質問</div>
-    <div class="news-list">
-      <div class="news-item" style="flex-direction:column;gap:6px;"><div style="font-weight:700;color:#e67e22;">Q. 新NISAはいくらから始められますか？</div><div>SBI証券・楽天証券・マネックス証券などは100円から積立が可能です。クレカ積立の上限は月10万円（2024年3月に月5万円から引き上げ済み）です。</div></div>
-      <div class="news-item" style="flex-direction:column;gap:6px;"><div style="font-weight:700;color:#e67e22;">Q. つみたて投資枠と成長投資枠はどちらを使えばいい？</div><div>初心者はまずつみたて投資枠から始めるのがおすすめです。詳しくは<a href="articles/nisa-tsumitate-growth.html">こちらの記事</a>をご覧ください。</div></div>
-      <div class="news-item" style="flex-direction:column;gap:6px;"><div style="font-weight:700;color:#e67e22;">Q. 年会費無料カードでポイント還元率が一番高いのはどこですか？</div><div>2026年3月時点では、マネックス証券×dカードの組み合わせがNISA口座で積立額問わず一律1.1%還元と最も高いです。詳しくは<a href="articles/credit-card-best.html">クレカ積立比較記事</a>をご覧ください。</div></div>
+    <!-- Q&A -->
+    <div class="sec-head" style="margin-top:28px;" id="qa">
+      <div class="sec-head-icon">❓</div>
+      <h2>よくある質問</h2>
+      <div class="sec-head-line"></div>
+    </div>
+    <div class="qa-box">
+      <div class="qa-item">
+        <div class="qa-q">新NISAはいくらから始められますか？</div>
+        <div class="qa-a">SBI証券・楽天証券・マネックス証券などは100円から積立が可能です。クレカ積立の上限は月10万円（2024年3月に引き上げ済み）です。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">年会費無料カードで一番還元率が高いのはどこですか？</div>
+        <div class="qa-a">2026年3月時点では、マネックス証券×dカードの組み合わせがNISA口座で積立額問わず一律1.1%還元と最も高いです。詳しくは<a href="articles/credit-card-best.html">クレカ積立比較記事</a>をご覧ください。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">つみたて投資枠と成長投資枠、どちらから始めるべきですか？</div>
+        <div class="qa-a">初心者はまずつみたて投資枠から始めるのがおすすめです。金融庁が認定した厳選ファンドのみが対象で選びやすく、定期積立でリスクを分散できます。詳しくは<a href="articles/nisa-tsumitate-growth.html">こちらの記事</a>をご覧ください。</div>
+      </div>
     </div>
 
-    <div class="disclaimer-box" style="margin-top:20px;"><ul>
-      <li>当サイトの掲載情報は参考情報の提供を目的としたものであり、掲載銘柄を推奨するものではありません。</li>
-      <li>最終的な投資決定は、各取扱金融機関の公式サイトをご確認いただき、ご自身の判断でなさるようお願いいたします。</li>
+    <div class="disc-box"><ul>
+      <li>当サイトの掲載情報は参考情報の提供を目的としたものであり、特定の金融商品の購入を推奨するものではありません。</li>
+      <li>最終的な投資判断は各金融機関の公式サイトをご確認いただき、ご自身の責任でお願いします。</li>
       <li>当サイトはアフィリエイト広告（もしもアフィリエイト等）を利用しています。掲載情報は2026年3月時点のものです。</li>
     </ul></div>
+
   </main>
 
-  <aside class="sidebar">
-    <div class="sidebar-pr"><div class="sidebar-pr-label">PR</div><div class="sidebar-pr-body"><div class="sidebar-pr-name">🏆 マネックス証券</div><div class="sidebar-pr-desc">dカード積立でNISA口座<br>一律1.1%還元（年会費無料）</div><a href="#" class="sidebar-pr-btn">無料で口座開設 →</a></div></div>
-    <div class="sidebar-box">
-      <div class="sidebar-title">📊 銘柄ランキング（つみたて投資枠）</div>
-      <div class="sidebar-list">
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-item"><div class="sidebar-rank">1</div><div class="sidebar-text">eMAXIS Slim 全世界株式（オール・カントリー）</div></a>
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-item"><div class="sidebar-rank">2</div><div class="sidebar-text">eMAXIS Slim 米国株式（S&P500）</div></a>
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-item"><div class="sidebar-rank">3</div><div class="sidebar-text">iFreeNEXT FANG+インデックス</div></a>
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-item"><div class="sidebar-rank">4</div><div class="sidebar-text">eMAXIS Slim 国内株式（TOPIX）</div></a>
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-item"><div class="sidebar-rank">5</div><div class="sidebar-text">eMAXIS 最適化バランス（マイディフェンダー）</div></a>
-        <a href="articles/nisa-orkan-sp500.html" class="sidebar-more">もっと見る ›</a>
+  <!-- サイドバー（メダル型ランキング） -->
+  <aside>
+
+    <div class="side-pr">
+      <div class="side-pr-label">PR</div>
+      <div class="side-pr-body">
+        <div class="side-pr-name">🏅 マネックス証券</div>
+        <div class="side-pr-desc">dカード積立<br>NISA口座<strong style="color:#e67e22">一律1.1%還元</strong><br>（年会費無料カード）</div>
+        <a href="#" class="side-pr-btn">無料で口座開設 →</a>
       </div>
     </div>
-    <div class="sidebar-box">
-      <div class="sidebar-title">💳 クレカ還元率ランキング</div>
-      <div class="sidebar-list">
-        <a href="articles/credit-card-best.html" class="sidebar-item"><div class="sidebar-rank">1</div><div class="sidebar-text">マネックス×dカード 1.1%（NISA口座一律）</div></a>
-        <a href="articles/credit-card-best.html" class="sidebar-item"><div class="sidebar-rank">2</div><div class="sidebar-text">楽天証券×楽天カード 月5万円まで1%</div></a>
-        <a href="articles/credit-card-best.html" class="sidebar-item"><div class="sidebar-rank">3</div><div class="sidebar-text">三菱UFJ eスマート×au PAY 月10万円まで1%</div></a>
-        <a href="articles/credit-card-best.html" class="sidebar-more">もっと見る ›</a>
+
+    <div class="side-box">
+      <div class="side-head">🏆 おすすめ銘柄（つみたて投資枠）</div>
+      <div class="side-list">
+        <a href="articles/nisa-orkan-sp500.html" class="side-item">
+          <div class="side-medal m1">1</div>
+          <div class="side-text">eMAXIS Slim 全世界株式（オール・カントリー）</div>
+        </a>
+        <a href="articles/nisa-orkan-sp500.html" class="side-item">
+          <div class="side-medal m2">2</div>
+          <div class="side-text">eMAXIS Slim 米国株式（S&P500）</div>
+        </a>
+        <a href="articles/nisa-orkan-sp500.html" class="side-item">
+          <div class="side-medal m3">3</div>
+          <div class="side-text">iFreeNEXT FANG+インデックス</div>
+        </a>
+        <a href="articles/nisa-orkan-sp500.html" class="side-item">
+          <div class="side-medal mn">4</div>
+          <div class="side-text">eMAXIS Slim 国内株式（TOPIX）</div>
+        </a>
+        <a href="articles/nisa-orkan-sp500.html" class="side-item">
+          <div class="side-medal mn">5</div>
+          <div class="side-text">eMAXIS 最適化バランス（マイディフェンダー）</div>
+        </a>
+        <a href="articles/nisa-orkan-sp500.html" class="side-more">もっと見る ›</a>
       </div>
     </div>
-    <div class="sidebar-pr"><div class="sidebar-pr-label">PR</div><div class="sidebar-pr-body"><div class="sidebar-pr-name">💳 楽天証券</div><div class="sidebar-pr-desc">楽天ポイントで投資できる<br>月5万円まで1〜2%還元</div><a href="#" class="sidebar-pr-btn">詳細はこちら →</a></div></div>
-    <div class="sidebar-box">
-      <div class="sidebar-title">📰 新着記事</div>
-      <div class="sidebar-list">
-        <a href="articles/nisa-ideco.html" class="sidebar-item"><div class="sidebar-rank">🆕</div><div class="sidebar-text">新NISAとiDeCo徹底比較【2026年版】</div></a>
-        <a href="articles/nisa-compare.html" class="sidebar-item"><div class="sidebar-rank">🆕</div><div class="sidebar-text">おすすめ証券会社徹底比較【2026年最新】</div></a>
-        <a href="articles/credit-card-best.html" class="sidebar-item"><div class="sidebar-rank">🆕</div><div class="sidebar-text">クレカ積立還元率ランキング【2026年最新】</div></a>
+
+    <div class="side-box">
+      <div class="side-head">💳 クレカ積立 還元率ランキング</div>
+      <div class="side-list">
+        <a href="articles/credit-card-best.html" class="side-item">
+          <div class="side-medal m1">1</div>
+          <div class="side-text">マネックス×dカード<br><span style="color:#e67e22;font-weight:700">1.1%</span>（NISA口座・一律）</div>
+        </a>
+        <a href="articles/credit-card-best.html" class="side-item">
+          <div class="side-medal m2">2</div>
+          <div class="side-text">楽天証券×楽天カード<br>月5万円まで<span style="color:#e67e22;font-weight:700">1.0%</span></div>
+        </a>
+        <a href="articles/credit-card-best.html" class="side-item">
+          <div class="side-medal m3">3</div>
+          <div class="side-text">三菱UFJ×au PAYカード<br>月10万円まで<span style="color:#e67e22;font-weight:700">1.0%</span></div>
+        </a>
+        <a href="articles/credit-card-best.html" class="side-more">詳細比較を見る ›</a>
       </div>
     </div>
+
+    <div class="side-pr">
+      <div class="side-pr-label">PR</div>
+      <div class="side-pr-body">
+        <div class="side-pr-name">🎓 松井証券</div>
+        <div class="side-pr-desc">オリコン顧客満足度<br>ランキング<strong style="color:#e67e22">1位（2026年）</strong><br>初心者向けサポート充実</div>
+        <a href="#" class="side-pr-btn">詳細はこちら →</a>
+      </div>
+    </div>
+
+    <div class="side-box">
+      <div class="side-head">📰 新着記事</div>
+      <div class="side-list">
+        <a href="articles/nisa-ideco.html" class="side-item">
+          <div class="side-medal mn">新</div>
+          <div class="side-text">新NISAとiDeCo徹底比較【2026年版】</div>
+        </a>
+        <a href="articles/nisa-compare.html" class="side-item">
+          <div class="side-medal mn">新</div>
+          <div class="side-text">証券会社徹底比較【2026年最新】</div>
+        </a>
+        <a href="articles/credit-card-best.html" class="side-item">
+          <div class="side-medal mn">新</div>
+          <div class="side-text">クレカ積立還元率ランキング【2026年】</div>
+        </a>
+      </div>
+    </div>
+
   </aside>
 </div>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-logo">ゆるっと新NISA</div>
+  <div class="site-footer-inner">
+    <div class="footer-brand">ゆるっと<em>新NISA</em></div>
+    <div class="footer-tagline">初心者向け・やさしい新NISA解説サイト</div>
     <div class="footer-links">
       <a href="privacy.html">プライバシーポリシー</a>
       <a href="disclaimer.html">免責事項</a>
@@ -278,5 +861,6 @@ img{max-width:100%;height:auto;display:block;}
     <div class="footer-copy">Copyright © ゆるっと新NISA All Rights Reserved.</div>
   </div>
 </footer>
+
 </body>
 </html>
